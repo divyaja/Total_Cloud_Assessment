@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Total Cloud Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="cloud.js"></script>
+	<link rel="stylesheet" type="text/css" href="total_cloud.css">
+</head>
+<body >
+<div class="page-header">
+  <h2 style="font-size:3vw" class="page-header bg-primary text-center text-light">Resource Allocator</h2>
+</div>
+
+<div class="container-fluid jumbotron jumbotron-fluid">
+   <div class="row">
+    <div  class="col-sm-4" >
+	<ul id="first" class="list-group ofa">
+	
+    <li class="list-group-item text-center" id="1" onmousedown="changeColor(this.id)">First item </li>
+	<li class="list-group-item text-center" id="2" onmousedown="changeColor(this.id)"> Second item </li>
+	<li class="list-group-item text-center" id="3" onmousedown="changeColor(this.id)"> Third item </li>
+	<li class="list-group-item text-center" id="4" onmousedown="changeColor(this.id)"> Fourth item </li>
+    <li class="list-group-item text-center" id="5" onmousedown="changeColor(this.id)"> Fifth item </li>
+	<li class="list-group-item text-center" id="6" onmousedown="changeColor(this.id)"> Sixth item </li>
+	<li class="list-group-item text-center"id="7" onmousedown="changeColor(this.id)"> Seventh item </li>
+	<li class="list-group-item text-center" id="8" onmousedown="changeColor(this.id)"> Eighth item </li>
+    <li class="list-group-item text-center"id="9" onmousedown="changeColor(this.id)"> Nineth item </li>
+	
+	
+	</ul>
+	</div>
+    <div class="col-sm-4 " >
+	
+	<input type="button" class="btn btn-primary active text-center" value="Assign" onclick="addR()"><br>
+	<div id="alertmsg" class="alert alert-warning alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+   Please select a resource to assign.
+  </div>
+  
+  <!-- <div id="emptymsg" class="alert alert-warning alert-dismissible fade show"> -->
+   <!-- <button type="button" class="close" data-dismiss="alert">&times;</button> -->
+  <!-- No resources available to assign. -->
+  <!-- </div> -->
+  
+	<input type="button" class="btn btn-primary text-center" value="Revoke" onclick="removeR()" >
+	<div id="alertmsgR" class="alert alert-warning alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+   Please select a resource to revoke.
+  </div>
+	
+	</div>
+    <div class="col-sm-4 "  >
+	<ul class="list-group ofa" id="second">
+	</ul>
+	</div>
+  </div>
+</div>
+
+
+</body>
+</html>
