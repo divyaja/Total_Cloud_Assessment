@@ -13,10 +13,11 @@
 	<script src="cloud.js"></script>
 	<link rel="stylesheet" type="text/css" href="total_cloud.css">
 </head>
-<body >
+<body id="body" class="dark-mode" >
 <div class="page-header">
   <h2 style="font-size:3vw" class="page-header bg-primary text-center text-light">Resource Allocator</h2>
 </div>
+
 
 <div class="container-fluid jumbotron jumbotron-fluid">
    <div class="row">
@@ -38,18 +39,12 @@
 	</div>
     <div class="col-sm-4 " >
 	
-	<input type="button" class="btn btn-primary active text-center" value="Assign" onclick="addR()"><br>
+	<center><input type="button" class=" uib  align-self-center mx-auto btn btn-primary text-center" value="Assign" onclick="addR()"><br></center>
 	<div id="alertmsg" class="alert alert-warning alert-dismissible fade show">
     <button type="button" class="close" data-dismiss="alert">&times;</button>
    Please select a resource to assign.
   </div>
-  
-  <!-- <div id="emptymsg" class="alert alert-warning alert-dismissible fade show"> -->
-   <!-- <button type="button" class="close" data-dismiss="alert">&times;</button> -->
-  <!-- No resources available to assign. -->
-  <!-- </div> -->
-  
-	<input type="button" class="btn btn-primary text-center" value="Revoke" onclick="removeR()" >
+	<center><input type="button" class="uib  align-self-center mx-auto btn btn-primary text-center" value="Revoke" onclick="removeR()" ></center>
 	<div id="alertmsgR" class="alert alert-warning alert-dismissible fade show">
     <button type="button" class="close" data-dismiss="alert">&times;</button>
    Please select a resource to revoke.
