@@ -7,5 +7,17 @@ li:hover{
 	background-color: #d3d3d3;
   color: white;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6699ff; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6699ff; 
+}
 
-
+.uib{
+	padding: .75rem 1.25rem;
+	border-radius: 15px
+}
