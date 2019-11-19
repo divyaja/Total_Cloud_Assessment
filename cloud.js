@@ -1,13 +1,5 @@
-// function addR(){
-	// var new_R = $('<li></li>').addClass('task');         
-         // new_R.attr('id', 'new_R');
-         // new_R.text($('#persona :selected').text());
-  			// new_R.appendTo('ol.list');
-// }
 var selected_id=0,al=0;
-//var s_element=document.getElementsByTagName("LI").hasAttribute("selected");
 var s_id=0;
-//var check_Selected_id=false;
 
  function addR(){
 	
@@ -90,7 +82,6 @@ var s_id=0;
 			changeColor(x.getAttribute("id"))}
 	x.appendChild(t);
 	var item = document.getElementById(selected_id);
-	//item.parentNode.removeChild(item);
 	document.getElementById("second").removeChild(item);
 	document.getElementById("first").appendChild(x);
 	
@@ -112,7 +103,6 @@ function changeColor(id) {
 			alertm.style.display = "none";
 	}
 	var check_Selected_id = document.getElementById(id).hasAttribute("selected");
-	//s_id=id;
 	var listitem = document.getElementById(id);
 	var selected_listitem=document.getElementById(selected_id);
 	if(!check_Selected_id){
@@ -121,7 +111,7 @@ function changeColor(id) {
 			selected_listitem.removeAttribute("style");
 			selected_listitem.removeAttribute("selected");
 		}
-	listitem.style.backgroundColor = "#90ee90";
+	listitem.style.backgroundColor = "#d3d3d3";
 	listitem.setAttribute("selected","selected");
 	
 	selected_id=id;
@@ -130,7 +120,5 @@ function changeColor(id) {
 		s_id=id;
 		listitem.removeAttribute("style");
 		listitem.removeAttribute("selected");
-		//listitem.filter("#"+selected_id).removeAttribute("style");
-		//listitem.filter("#"+selected_id).removeAttribute("selected");
-	}
+		}
 }
